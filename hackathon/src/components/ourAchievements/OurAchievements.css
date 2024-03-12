@@ -1,0 +1,126 @@
+.achievements{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+}
+.list1{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.list2{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+}
+.title4{
+    font-size: 2rem;
+}
+.list1 > div, .list2 > div {
+    position: relative; /* Ensure the div is positioned relative to its container */
+    
+    background-size: cover;
+    border: 1px outset rgb(85, 84, 84);
+    border-radius: 5px;
+    width: 300px;
+    height: 350px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Apply transition to transform and box-shadow properties */
+    overflow: hidden; /* Hide overflow content */
+}
+.box1{
+    background-image: url("../src/assests/images/Yesim's_story.png");
+    background-size: cover;
+}
+.box2{
+    background-image: url("../src/assests/images/animal_story.jpg");
+    background-size: cover;
+}
+.box3{
+    background-image: url("../src/assests/images/Disha_foundation_story.png");
+    background-size: cover;
+}
+.box4{
+    background-image: url("../src/assests/images/uttam_story.png");
+    background-size: cover;
+}
+.box5{
+    background-image: url("../src/assests/images/Saday_story.jpg");
+    background-size: cover;
+}
+.box6{
+    background-image: url("../src/assests/images/Yesim's_story.png");
+    background-size: cover;
+}
+.list1 > div::before, .list2 > div::before {
+    content: '';
+    position: absolute;
+    bottom: -70%; /* Initially positioned below the div */
+    left: 0;
+    width: 100%;
+    height: 70%;
+
+    background-color: rgba(255, 255, 255, 0); /* Initially transparent */
+    transition: bottom 0.5s ease, background-color 0.3s ease; /* Smooth transition for position and background-color */
+}
+
+/* Adjust the transform and box-shadow properties on hover */
+.list1 > div:hover, .list2 > div:hover {
+    transform: scale(1.01); /* Increase the size of the div on hover */
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.3); /* Add a shadow effect on hover */
+}
+.box1, .box2, .box3, .box4, .box5, .box6 {
+    width: 200px;
+    height: 200px;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: top 0.5s ease; /* Apply transition to the top property */
+}
+.box1:hover > div, .box2:hover > div, .box3:hover > div, .box4:hover > div, .box5:hover > div, .box6:hover > div {
+    top: 0;
+}
+
+.box1_title, .box2_title, .box3_title, .box4_title, .box5_title, .box6_title {
+    background-color: rgb(124, 121, 119);
+    color: beige;
+    width: 220px;
+    border-radius: 5px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    font-size: 1.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 40%; /* Initially position the div at the vertical center */
+    transition: top 0.5s ease; /* Apply transition to the top property */
+}
+.list1 > div:hover::before, .list2 > div:hover::before {
+    bottom: 0; /* Move the plane background to the top of the div on hover */
+    background-color: rgba(223, 223, 223, 0.95); /* Change background color on hover */
+}
+.box1_content, .box2_content, .box3_content, .box4_content, .box5_content, .box6_content{
+    font-size: 1rem;
+    padding: 0.8rem;
+    position: relative;
+    top: 50%;
+    transition: top 0.5s ease;
+}
+.box1:hover > .box1_content, .box2:hover > .box2_content, .box3:hover > .box3_content, .box4:hover > .box4_content, .box5:hover > .box5_content, .box6:hover > .box6_content {
+    top: 5%;
+}

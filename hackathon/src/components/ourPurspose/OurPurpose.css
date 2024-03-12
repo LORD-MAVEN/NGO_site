@@ -1,0 +1,38 @@
+.our_purpose{
+    margin-top: -5rem;
+    padding-bottom: 3.5rem;
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../src/assests/images/wave_lines1.png');
+    background-size: cover;
+    filter: grayscale(95%);
+}
+.title1{
+    margin-left: -9.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    column-gap: 5px;
+    font-size: 1.3rem;
+}
+.title1 > div{
+    width: 83%;
+    height: 0px;
+    border-top: 3px ridge rgba(129, 129, 129, 0.39);
+}
+.title2{
+    width: 50%;
+    font-weight: 600;
+    font-size: 2rem;
+}
+.matter{
+    width: 50%;
+    font-size: 1.6rem;
+    text-align: justify;
+}

@@ -1,0 +1,84 @@
+.title3 {
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+.treadmill {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Hide overflow to ensure only visible content */
+}
+
+.treadmill > div {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 15rem;
+}
+.treadmill > div > div {
+    font-size: 2rem;
+    width: 150px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.one >img, .two >img, .three >img{
+    border: 2px outset rgb(184, 184, 184);
+    width: 240px;
+    height: 285px;
+    border-radius: 0.3cap;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
+}
+.two >img{
+    width: 270px;
+    height: 320px;
+}
+.two, .one, .three{
+    display: flex;
+    flex-direction: column;
+}
+.two >div{
+    width: 18rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+    color: rgb(63, 63, 63);
+    font-size: 1.7rem;
+    background-color: rgba(236, 236, 236, 0.952);
+    position: relative;
+    top: -6rem;
+    text-align: center;
+    border-radius: 0.7cap;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.671);
+}
+.two >div >div{
+    padding-top: 1rem;
+    font-size: 1.1rem;
+}
+.three >div >div, .one >div >div{
+    padding-top: 1rem;
+    font-size: 0.85rem;
+}
+.one >div, .three >div{
+    padding: 0.5rem;
+    color: rgb(63, 63, 63);
+    font-size: 1.25rem;
+    padding-bottom: 1.3rem;
+    background-color: rgba(236, 236, 236, 0.95);
+    position: relative;
+    top: -5rem;
+    width: 15rem;
+    text-align: center;
+    border-radius: 0.7cap;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.671);
+    margin-bottom: 1rem;
+}
+/* Define animations */

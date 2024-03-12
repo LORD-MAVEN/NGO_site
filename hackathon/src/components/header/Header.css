@@ -1,0 +1,66 @@
+.front_page > .head_strip{
+    background-color: rgb(49, 49, 49);
+    color: rgb(255, 255, 255);
+    position:sticky;
+    top: 0px;
+    z-index: 1;
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.85);
+}
+
+.title{
+    font-size: 3rem;
+}
+.head_strip{
+    display: flex;
+    height: 85px;
+    width: 85%;
+    padding-left: 5%;
+    padding-right: 10%;
+    align-items: center;
+    justify-content: space-between;
+}
+.navigate{
+    font-size: 1.1rem;
+    padding-left:2%;
+    padding-right: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    height: 100px;
+}
+.navigate>div{
+    cursor: pointer;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    box-shadow: #fcb900;
+}
+.search{
+    font-size: 1.5rem;
+}
+.home, .event, .blogs{
+    width: 75px;
+}
+.blogs{
+    width: 65px;
+}
+.about{
+    width: 88px;
+    margin-right: 2.5rem;
+}
+.donate{
+    font-size: 1.6rem;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+} 
+@keyframes myAnimation {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
